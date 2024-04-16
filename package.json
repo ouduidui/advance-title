@@ -1,17 +1,23 @@
 {
   "name": "advance-title",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
-  },
-  "devDependencies": {
-    "@rsbuild/core": "^0.6.1",
-    "typescript": "^5.4.2"
+    "preview": "rsbuild preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "dayjs": "^1.11.10"
+    "dayjs": "^1.11.10",
+    "qs": "^6.12.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.14.0",
+    "@rsbuild/core": "^0.6.1",
+    "@types/qs": "^6.9.14",
+    "eslint": "^9.0.0",
+    "typescript": "^5.4.2"
   }
 }
